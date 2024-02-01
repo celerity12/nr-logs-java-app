@@ -15,10 +15,10 @@ RUN ./mvnw package
 FROM newrelic/infrastructure:latest
 
 # Install JDK/JRE for the Java application
-RUN apt-get update && apt-get install -y openjdk-17-jre-headless
+RUN apk update && apk --no-cache add openjdk17 gcompat --repository=https://dl-cdn.alpinelinux.org/alpine/v3.17/community
 
 # Add Unzip utility
-RUN apt-get install -y unzip
+RUN apk add unzip
 
 # Download New Relic Java APM Agent
 RUN curl -O https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
