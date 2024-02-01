@@ -1,0 +1,14 @@
+###############################################################################
+# Log forwarder configuration file example                                    #
+# Source: file                                                                #
+# Available customization parameters: attributes, max_line_kb, pattern        #
+###############################################################################
+logs:
+  # Basic tailing of a single file
+  - name: basic-file
+    file: /var/log/logFile.log
+
+  # Use 'pattern' to filter records using a regular expression
+  - name: only-records-with-warn-and-error
+    file: /var/log/logFile_1.log
+    pattern: AWS|GCP

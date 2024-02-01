@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java World App 2 </title>
+</head>
+
+<body>
+    <h1> Java World App 2 Instrumented with New Relic </h1>
+    <form action="/api/hw" method="get">
+        <button type="submit">Call Self Auto Instrumented</button>
+    </form>
+    </br></br></br>
+    <form action="/api/hello" method="get">
+        <button type="submit">Call Self Auto Instrumented + Java API /api/hello 9136 has NO Auto
+            Instrumentation</button>
+    </form>
+    </br></br></br>
+    <form action="/api/call-api" method="get">
+        <button type="submit">Call third party + DOT NET API 8135 /callapi:- Both caller and called service are Auto
+            Instrumented</button>
+    </form>
+</body>
+
+</html>
