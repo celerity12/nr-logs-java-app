@@ -13,7 +13,7 @@ generate_log_entry() {
     if [ "$random_choice" -eq 1 ]; then
         echo "$(date) - Sample log entry AWS"
     else
-        echo "$(date) - Sample log entry"
+        echo "{\"event\": \"annual summit\", \"location\": \"Mountain View\", \"year\": 2022, \"message\": {\"title\": \"Welcome to the Summit\", \"content\": \"We are excited to have you join us this year for a series of engaging talks and workshops.\"}}"
     fi
 }
 
@@ -24,11 +24,11 @@ do
     log_entry=$(generate_log_entry)
 
     # Append to logFile.log
-    echo "$log_entry" >> $LOG_FILE
+    echo "$log_entry" >> /dev/stdout
 
     # Append to logFile1.log if it contains 'aws'
     if [[ "$log_entry" == *"aws"* ]]; then
-        echo "$log_entry" >> $LOG_FILE1
+        echo "$log_entry" /dev/stdout #>> $LOG_FILE1
     fi
 
     # Wait for a few seconds before generating the next log entry

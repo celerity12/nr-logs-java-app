@@ -31,3 +31,9 @@ replay_pid*
 
 
 target/**
+deploy.logs
+mydata.txt
+Dockerfile_Layering
+Dockerfile copy
+target/hello-world-app-1.0-SNAPSHOT-jar-with-dependencies.jar
+target/hello-world-app-1.0-SNAPSHOT.jar

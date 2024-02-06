@@ -1,71 +1,37 @@
+0f16b4c16cc0
+0f16b4c16cc0
+Untagged: hw-java-app-8136:v1
+Deleted: sha256:282b9cf9f5020c0ed14a62f7c7fbd1c4b8fa9734f1ba192ff8d10c53d3089475
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] --------------------< com.example:hello-world-app >---------------------
 [INFO] Building hello-world-app 1.0-SNAPSHOT
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.1.2/maven-surefire-plugin-3.1.2.pom
-Progress (1): 1.4/5.5 kBProgress (1): 2.8/5.5 kBProgress (1): 4.1/5.5 kBProgress (1): 5.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.1.2/maven-surefire-plugin-3.1.2.pom (5.5 kB at 8.4 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.1.2/surefire-3.1.2.pom
-Progress (1): 1.4/22 kBProgress (1): 2.8/22 kBProgress (1): 4.1/22 kBProgress (1): 5.5/22 kBProgress (1): 6.9/22 kBProgress (1): 8.3/22 kBProgress (1): 9.7/22 kBProgress (1): 11/22 kB Progress (1): 12/22 kBProgress (1): 14/22 kBProgress (1): 15/22 kBProgress (1): 16/22 kBProgress (1): 17/22 kBProgress (1): 19/22 kBProgress (1): 20/22 kBProgress (1): 21/22 kBProgress (1): 22 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.1.2/surefire-3.1.2.pom (22 kB at 260 kB/s)
 [INFO] 
 [INFO] --- clean:3.2.0:clean (default-clean) @ hello-world-app ---
-[INFO] Deleting /Users/srohatgi/Downloads/hello-world-dt copy/hw-java-app/target
+[INFO] Deleting /Users/srohatgi/Downloads/hw-java-app/target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ hello-world-app ---
 [INFO] Copying 1 resource from src/main/resources to target/classes
 [INFO] 
 [INFO] --- compiler:3.10.1:compile (default-compile) @ hello-world-app ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /Users/srohatgi/Downloads/hello-world-dt copy/hw-java-app/target/classes
+[INFO] Compiling 1 source file to /Users/srohatgi/Downloads/hw-java-app/target/classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ hello-world-app ---
-[INFO] skip non existing resourceDirectory /Users/srohatgi/Downloads/hello-world-dt copy/hw-java-app/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/srohatgi/Downloads/hw-java-app/src/test/resources
 [INFO] 
 [INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hello-world-app ---
 [INFO] Changes detected - recompiling the module!
 [INFO] 
 [INFO] --- surefire:3.1.2:test (default-test) @ hello-world-app ---
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.1.2/maven-surefire-common-3.1.2.pom
-Progress (1): 1.4/6.1 kBProgress (1): 2.8/6.1 kBProgress (1): 4.1/6.1 kBProgress (1): 5.5/6.1 kBProgress (1): 6.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.1.2/maven-surefire-common-3.1.2.pom (6.1 kB at 152 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.1.2/surefire-api-3.1.2.pom
-Progress (1): 1.4/3.5 kBProgress (1): 2.8/3.5 kBProgress (1): 3.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.1.2/surefire-api-3.1.2.pom (3.5 kB at 136 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.1.2/surefire-logger-api-3.1.2.pom
-Progress (1): 1.4/3.3 kBProgress (1): 2.8/3.3 kBProgress (1): 3.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.1.2/surefire-logger-api-3.1.2.pom (3.3 kB at 136 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.1.2/surefire-shared-utils-3.1.2.pom
-Progress (1): 1.4/4.1 kBProgress (1): 2.8/4.1 kBProgress (1): 4.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.1.2/surefire-shared-utils-3.1.2.pom (4.1 kB at 140 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.1.2/surefire-extensions-api-3.1.2.pom
-Progress (1): 1.4/3.3 kBProgress (1): 2.8/3.3 kBProgress (1): 3.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.1.2/surefire-extensions-api-3.1.2.pom (3.3 kB at 122 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.1.2/surefire-booter-3.1.2.pom
-Progress (1): 1.4/4.5 kBProgress (1): 2.8/4.5 kBProgress (1): 4.1/4.5 kBProgress (1): 4.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.1.2/surefire-booter-3.1.2.pom (4.5 kB at 135 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.1.2/surefire-extensions-spi-3.1.2.pom
-Progress (1): 1.4/1.8 kBProgress (1): 1.8 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.1.2/surefire-extensions-spi-3.1.2.pom (1.8 kB at 52 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.pom
-Progress (1): 16/20 kBProgress (1): 20 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.pom (20 kB at 406 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/57/commons-parent-57.pom
-Progress (1): 16/83 kBProgress (1): 33/83 kBProgress (1): 49/83 kBProgress (1): 66/83 kBProgress (1): 82/83 kBProgress (1): 83 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/57/commons-parent-57.pom (83 kB at 1.7 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.1.2/maven-surefire-common-3.1.2.jar
-Progress (1): 16/306 kBProgress (1): 32/306 kBProgress (1): 49/306 kBProgress (1): 65/306 kBProgress (1): 81/306 kBProgress (1): 98/306 kBProgress (1): 114/306 kBProgress (1): 131/306 kBProgress (1): 147/306 kBProgress (1): 163/306 kBProgress (1): 180/306 kBProgress (1): 196/306 kBProgress (1): 212/306 kBProgress (1): 229/306 kBProgress (1): 245/306 kBProgress (1): 262/306 kBProgress (1): 278/306 kBProgress (1): 294/306 kBProgress (1): 306 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.1.2/maven-surefire-common-3.1.2.jar (306 kB at 5.7 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.1.2/surefire-api-3.1.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.1.2/surefire-logger-api-3.1.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.1.2/surefire-extensions-api-3.1.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.1.2/surefire-booter-3.1.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.1.2/surefire-extensions-spi-3.1.2.jar
-Progress (1): 16/26 kBProgress (1): 26 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.1.2/surefire-extensions-api-3.1.2.jar (26 kB at 574 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar
-Progress (1): 16/474 kBProgress (1): 33/474 kBProgress (1): 49/474 kBProgress (1): 66/474 kBProgress (1): 82/474 kBProgress (1): 98/474 kBProgress (1): 115/474 kBProgress (1): 131/474 kBProgress (1): 147/474 kBProgress (1): 164/474 kBProgress (1): 180/474 kBProgress (1): 197/474 kBProgress (1): 213/474 kBProgress (1): 229/474 kBProgress (1): 246/474 kBProgress (1): 262/474 kBProgress (1): 279/474 kBProgress (1): 295/474 kBProgress (1): 311/474 kBProgress (1): 328/474 kBProgress (1): 344/474 kBProgress (1): 360/474 kBProgress (1): 377/474 kBProgress (1): 393/474 kBProgress (1): 410/474 kBProgress (1): 426/474 kBProgress (1): 442/474 kBProgress (1): 459/474 kBProgress (1): 474 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar (474 kB at 5.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.1.2/surefire-shared-utils-3.1.2.jar
-Progress (1): 0/2.3 MBProgress (1): 0/2.3 MBProgress (1): 0/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.1.2/surefire-shared-utils-3.1.2.jar (2.3 MB at 13 MB/s)
-Progress (1): 1.4/8.2 kBProgress (2): 1.4/8.2 kB | 1.4/171 kBProgress (3): 1.4/8.2 kB | 1.4/171 kB | 1.4/14 kBProgress (3): 1.4/8.2 kB | 2.8/171 kB | 1.4/14 kBProgress (3): 2.8/8.2 kB | 2.8/171 kB | 1.4/14 kBProgress (3): 2.8/8.2 kB | 4.1/171 kB | 1.4/14 kBProgress (3): 2.8/8.2 kB | 4.1/171 kB | 2.8/14 kBProgress (3): 2.8/8.2 kB | 5.5/171 kB | 2.8/14 kBProgress (3): 4.1/8.2 kB | 5.5/171 kB | 2.8/14 kBProgress (3): 4.1/8.2 kB | 6.9/171 kB | 2.8/14 kBProgress (3): 4.1/8.2 kB | 6.9/171 kB | 4.1/14 kBProgress (3): 4.1/8.2 kB | 8.3/171 kB | 4.1/14 kBProgress (3): 5.5/8.2 kB | 8.3/171 kB | 4.1/14 kBProgress (3): 5.5/8.2 kB | 9.7/171 kB | 4.1/14 kBProgress (3): 5.5/8.2 kB | 9.7/171 kB | 5.5/14 kBProgress (3): 5.5/8.2 kB | 11/171 kB | 5.5/14 kB Progress (3): 6.9/8.2 kB | 11/171 kB | 5.5/14 kBProgress (3): 6.9/8.2 kB | 12/171 kB | 5.5/14 kBProgress (3): 6.9/8.2 kB | 12/171 kB | 6.9/14 kBProgress (3): 8.2 kB | 12/171 kB | 6.9/14 kB    Progress (3): 8.2 kB | 12/171 kB | 8.3/14 kBProgress (3): 8.2 kB | 12/171 kB | 9.7/14 kBProgress (3): 8.2 kB | 12/171 kB | 11/14 kB Progress (3): 8.2 kB | 12/171 kB | 12/14 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.1.2/surefire-extensions-spi-3.1.2.jar (8.2 kB at 36 kB/s)
-Progress (2): 14/171 kB | 12/14 kBProgress (2): 14/171 kB | 14 kB   Progress (2): 15/171 kB | 14 kBProgress (2): 16/171 kB | 14 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.1.2/surefire-logger-api-3.1.2.jar (14 kB at 59 kB/s)
-Progress (2): 16/171 kB | 16/118 kBProgress (2): 32/171 kB | 16/118 kBProgress (2): 32/171 kB | 33/118 kBProgress (2): 49/171 kB | 33/118 kBProgress (2): 49/171 kB | 49/118 kBProgress (2): 65/171 kB | 49/118 kBProgress (2): 65/171 kB | 66/118 kBProgress (2): 81/171 kB | 66/118 kBProgress (2): 81/171 kB | 82/118 kBProgress (2): 98/171 kB | 82/118 kBProgress (2): 98/171 kB | 98/118 kBProgress (2): 114/171 kB | 98/118 kBProgress (2): 114/171 kB | 115/118 kBProgress (2): 130/171 kB | 115/118 kBProgress (2): 130/171 kB | 118 kB    Progress (2): 147/171 kB | 118 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.1.2/surefire-booter-3.1.2.jar (118 kB at 395 kB/s)
-Progress (1): 163/171 kBProgress (1): 171 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.1.2/surefire-api-3.1.2.jar (171 kB at 557 kB/s)
 [INFO] 
 [INFO] --- jar:3.3.0:jar (default-jar) @ hello-world-app ---
-[INFO] Building jar: /Users/srohatgi/Downloads/hello-world-dt copy/hw-java-app/target/hello-world-app-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/srohatgi/Downloads/hw-java-app/target/hello-world-app-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- assembly:3.3.0:single (make-assembly) @ hello-world-app ---
-[INFO] Building jar: /Users/srohatgi/Downloads/hello-world-dt copy/hw-java-app/target/hello-world-app-1.0-SNAPSHOT-jar-with-dependencies.jar
+[INFO] Building jar: /Users/srohatgi/Downloads/hw-java-app/target/hello-world-app-1.0-SNAPSHOT-jar-with-dependencies.jar
 [WARNING] 
 [WARNING] Plugin [INTERNAL, EXTERNAL] validation issues were detected in following plugin(s)
 [WARNING] 
@@ -85,18 +51,18 @@ Progress (1): 163/171 kBProgress (1): 171 kB                        Downloade
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  10.729 s
-[INFO] Finished at: 2024-01-30T16:56:53-08:00
+[INFO] Total time:  8.330 s
+[INFO] Finished at: 2024-02-02T09:54:50-08:00
 [INFO] ------------------------------------------------------------------------
 #0 building with "desktop-linux" instance using docker driver
 
-#1 [internal] load build definition from Dockerfile
-#1 transferring dockerfile: 1.47kB 0.0s done
-#1 DONE 0.1s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
 
-#2 [internal] load .dockerignore
-#2 transferring context: 2B done
-#2 DONE 0.1s
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.51kB done
+#2 DONE 0.0s
 
 #3 [internal] load metadata for docker.io/newrelic/infrastructure:latest
 #3 DONE 0.0s
@@ -108,44 +74,84 @@ Progress (1): 163/171 kBProgress (1): 171 kB                        Downloade
 #5 DONE 0.0s
 
 #4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-jammy
-#4 DONE 2.4s
+#4 DONE 1.3s
 
-#6 [internal] load build context
-#6 transferring context: 100.82kB 0.0s done
-#6 DONE 0.1s
+#6 [stage-2  1/15] FROM docker.io/newrelic/infrastructure:latest
+#6 DONE 0.0s
 
-#7 [base 1/6] FROM docker.io/library/eclipse-temurin:17-jdk-jammy@sha256:4d17cfd41a67cb3f19fa6ab80006dc67cb0f6c40c16251104cb5384b08193b7b
-#7 resolve docker.io/library/eclipse-temurin:17-jdk-jammy@sha256:4d17cfd41a67cb3f19fa6ab80006dc67cb0f6c40c16251104cb5384b08193b7b 0.0s done
-#7 sha256:4d17cfd41a67cb3f19fa6ab80006dc67cb0f6c40c16251104cb5384b08193b7b 1.21kB / 1.21kB done
-#7 sha256:e8b82974623b18dc9269d227755ffd7dcd927534c7f79242c47083a4ac713d33 1.37kB / 1.37kB done
-#7 sha256:b9b04483c136ae03843973204351c649f8def1ac91510180f2cd6c1cd41e25eb 6.78kB / 6.78kB done
-#7 sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838 0B / 30.45MB 0.1s
-#7 sha256:c506251a0ae0b836353578bafa8d6aeb266158d3291ba4abbc2f5f8ccda6f742 0B / 17.46MB 0.1s
-#7 sha256:693bd3307e0bae17c94fdea74fedb8af9f439baf53a7ba3118581622b419cb6e 0B / 144.90MB 0.1s
-#7 ...
+#7 [base 1/6] FROM docker.io/library/eclipse-temurin:17-jdk-jammy@sha256:9d664e63b5afc2d14b49434512d99c827c028877dadaa708aa24263abdb441c3
+#7 DONE 0.0s
 
-#8 [stage-2  1/14] FROM docker.io/newrelic/infrastructure:latest
-#8 DONE 0.2s
+#8 [internal] load build context
+#8 transferring context: 1.31kB 0.0s done
+#8 DONE 0.0s
 
-#7 [base 1/6] FROM docker.io/library/eclipse-temurin:17-jdk-jammy@sha256:4d17cfd41a67cb3f19fa6ab80006dc67cb0f6c40c16251104cb5384b08193b7b
-#7 sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838 1.56MB / 30.45MB 0.5s
-#7 sha256:693bd3307e0bae17c94fdea74fedb8af9f439baf53a7ba3118581622b419cb6e 8.39MB / 144.90MB 0.5s
-#7 sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838 7.34MB / 30.45MB 0.7s
-#7 CANCELED
+#9 [stage-2  7/15] COPY newrelic.yml /etc/newrelic.yml
+#9 CACHED
 
-#9 [stage-2  2/14] RUN apt-get update && apt-get install -y openjdk-17-jre-headless
-#9 0.570 /bin/sh: apt-get: not found
-#9 ERROR: process "/bin/sh -c apt-get update && apt-get install -y openjdk-17-jre-headless" did not complete successfully: exit code: 127
-------
- > [stage-2  2/14] RUN apt-get update && apt-get install -y openjdk-17-jre-headless:
-0.570 /bin/sh: apt-get: not found
-------
-Dockerfile:18
---------------------
-  16 |     
-  17 |     # Install JDK/JRE for the Java application
-  18 | >>> RUN apt-get update && apt-get install -y openjdk-17-jre-headless
-  19 |     
-  20 |     # Add Unzip utility
---------------------
-ERROR: failed to solve: process "/bin/sh -c apt-get update && apt-get install -y openjdk-17-jre-headless" did not complete successfully: exit code: 127
+#10 [build 1/1] RUN ./mvnw package
+#10 CACHED
+
+#11 [stage-2  8/15] COPY logging.yml /etc/logging.yml
+#11 CACHED
+
+#12 [base 4/6] COPY mvnw pom.xml ./
+#12 CACHED
+
+#13 [stage-2  3/15] RUN apk add unzip
+#13 CACHED
+
+#14 [stage-2  6/15] COPY newrelic-infra.yml /etc/newrelic-infra.yml
+#14 CACHED
+
+#15 [stage-2  2/15] RUN apk update && apk --no-cache add openjdk17 gcompat --repository=https://dl-cdn.alpinelinux.org/alpine/v3.17/community
+#15 CACHED
+
+#16 [base 6/6] COPY src ./src
+#16 CACHED
+
+#17 [base 5/6] RUN ./mvnw dependency:resolve
+#17 CACHED
+
+#18 [base 3/6] COPY .mvn/ .mvn
+#18 CACHED
+
+#19 [stage-2  5/15] RUN unzip newrelic-java.zip && rm newrelic-java.zip
+#19 CACHED
+
+#20 [stage-2  4/15] RUN curl -O https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
+#20 CACHED
+
+#21 [base 2/6] WORKDIR /app
+#21 CACHED
+
+#22 [stage-2  9/15] COPY --from=build /app/target/hello-world-app-1.0-SNAPSHOT-jar-with-dependencies.jar /app/hw-java-app.jar
+#22 CACHED
+
+#23 [stage-2 10/15] COPY start.sh /start.sh
+#23 DONE 0.0s
+
+#24 [stage-2 11/15] RUN chmod +x /start.sh
+#24 DONE 0.2s
+
+#25 [stage-2 12/15] COPY generate_log.sh /generate_log.sh
+#25 DONE 0.0s
+
+#26 [stage-2 13/15] RUN chmod +x /generate_log.sh
+#26 DONE 0.2s
+
+#27 [stage-2 14/15] COPY logFile.log /logFile.log
+#27 DONE 0.0s
+
+#28 [stage-2 15/15] COPY logFile1.log /logFile1.log
+#28 DONE 0.0s
+
+#29 exporting to image
+#29 exporting layers 0.1s done
+#29 writing image sha256:c426cabcb70316c2b51d3dbbae331471af5caafb869dd3f748c751d6c64ccbe4 done
+#29 naming to docker.io/library/hw-java-app-8136:v1 done
+#29 DONE 0.1s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+4732a6f94e5ed506a5abd03a90ebb50141598f65b455266bb916d12681e1e6c6

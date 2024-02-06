@@ -1,117 +1,9 @@
-#
-# New Relic infrastructure agent configuration file
-#
-# This file overrides the agent defaults. Lines that begin with # are comments,
-# which are ignored by the infrastructure agent. Uncomment the desired options
-# to enable them. Restart the agent or the server after changing settings.
-#
-# To use this file, change its name to newrelic-infra.yml and move it to:
-#    - Linux: /etc/newrelic-infra.yml
-#    - Windows: C:\Program Files\New Relic\newrelic-infra\newrelic-infra.yml
-#
-# The infrastructure agent only requires the license key to be
-# configured; the rest of the default values represent best practices.
-#
-# If options have command line equivalents, New Relic uses the command line
-# options to override values set in this file.
-#
-# Environment variables (documented here as "Env var") always override the
-# values set in the configuration file. We recommend setting any sensitive
-# information through environment variables.
-#
-# For more information on each setting, see https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure/configuration/infrastructure-configuration-settings
-#
-
-#
-# Option : license_key
-# Value  : 40-character hexadecimal string provided by New Relic. This is the
-#          only required value in your config file.
-# Default: none
-#
 license_key: xxx
-
-#
-# Option : fedramp
-# Value  : true in case you want to use Fedramp endpoints.
-# Default: false
-#
-#fedramp: false
-
-
-#
-# Option   : payload_compression_level
-# Env var  : NRIA_PAYLOAD_COMPRESSION_LEVEL
-# Value    : Sets the compression level of the agent requests payload.
-# Range    : 0-9
-# Default  : 6
-#
-#payload_compression_level: 6
-#
-
-#
-# Option   : display_name
-# Env var  : NRIA_DISPLAY_NAME
-# Value    : Replaces the automatically generated hostname for
-#            reporting.
-# Default  : Automatically generated hostname
-# Risk     : Changing this value could create a different host entity, causing
-#            some alarms to trigger, since the previous host would appear
-#            disconnected.
 display_name: HW_JAVA_APP-8136-INFRA
-#
-
-#
-# Option   : passthrough_environment
-# Env var  : NRIA_PASSTHROUGH_ENVIRONMENT
-# Value    : A list of environment variables that will be passed to all
-#            integrations. If an integration already has an existing
-#            configuration option with the same name, the environment variable
-#            takes precedence.
-# Default  : Empty
-#
-#passthrough_environment:
-#  - HOST
-#  - PORT
-
-#
-# Option   : custom_attributes
-# Env var  : NRIA_CUSTOM_ATTRIBUTES
-# Value    : Use optional key-value pairs to build filter sets, group your
-#            results, annotate your data, etc.
-#
 custom_attributes:
   environment: production
   service: login service
   team: alpha-team
-#
-
-#
-# Option   : enable_process_metrics
-# Env var  : NRIA_ENABLE_PROCESS_METRICS
-# Value    : Enables the sending of process metrics to New Relic. If you
-#            want to send metric data about all the operating system's processes
-#            to New Relic, set enable_process_metrics to true.
-# Tip      : Sending all process data could increase the volume of data sent
-#            to New Relic. To fine-tune which processes you want to monitor,
-#            configure include_matching_metrics.
-#
-#enable_process_metrics: false
-#
-
-#
-# Option   : include_matching_metrics
-# Env var  : NRIA_INCLUDE_MATCHING_METRICS
-# Value    : Use lists of metric attributes and values to only send to New Relic
-#            the metric data of matching entities.
-# Note     : Currently limited to process metrics (process.name and .executable).
-# Tip      : You can combine different attributes.
-#
-#include_matching_metrics:
-#  metric.attribute:
-#    - regex "pattern"
-#    - "string"
-#    - "string-with-wildcard*"
-#
 
 #
 # Option   : log
@@ -135,13 +27,6 @@ custom_attributes:
 #            forward: false
 #            stdout: true
 #            smart_level_entry_limit: 1000
-# Risk     : Providing a log file path that does not yet exist causes the agent
-#            to fail on startup.
-# Tip      : Use json format when forwarding the agent logs to New Relic logs for
-#            troubleshooting (forward: true).
-# Tip      : Run the agent in debug mode only for troubleshooting. To disable
-#            debug logging, set the level to info and restart the agent.
-# Tip      : The following configuration will only log the entries with the field integration_name=nri-flex or integration_name=nri-powerdns
 log:
   file: '/var/log/newrelic-infra/newrelic-infra.log'
   level: debug

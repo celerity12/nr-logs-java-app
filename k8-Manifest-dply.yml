@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw-java-app-deployment
+  labels:
+    app: hw-java-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hw-java-app
+  template:
+    metadata:
+      labels:
+        app: hw-java-app
+    spec:
+      containers:
+        - name: hw-java-app
+          image: hw-java-app-8136:v6.2
+          ports:
+            - containerPort: 8080
+          env:
+            - name: NEW_RELIC_APP_NAME
+              value: "HW_JAVA_APP-8136-LOGS-INFRA"
+            - name: NEW_RELIC_LICENSE_KEY
+              value: "xxx"
+            - name: NEW_RELIC_LOG_FILE_NAME
+              value: "/apmagent.log"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hw-java-app-service
+spec:
+  selector:
+    app: hw-java-app
+  ports:
+    - protocol: TCP
+      port: 8136
+      targetPort: 8080
+  type: NodePort

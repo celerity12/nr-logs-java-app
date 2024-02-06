@@ -1,4 +1,8 @@
 #!/bin/bash
+# Exit on error
+set -e
+# Exit if any command in a pipeline fails
+set -o pipefail
 
 # Find the container ID based on the image name
 container_id=$(docker ps -qf "ancestor=hw-java-app-8136:v1")
@@ -44,7 +48,7 @@ if [[ $answer == [Yy] ]]; then
     fi
     echo "Success: The command 'docker build' completed."
 
-    docker run -d -p 8136:8080 hw-java-app-8136:v1  >> deploy.logs 2>&1
+    docker run --name javalogs_summit -d -p 8136:8080 hw-java-app-8136:v1  >> deploy.logs 2>&1
     # Check the exit status of the previous command
     if [ $? -ne 0 ]; then
         echo "Error: The command 'docker run' failed."
